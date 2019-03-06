@@ -20,7 +20,7 @@ Action类都要继承 ActionSupport 实现接口ModelDriven;
 ModelDriven接口要重写getModel()方法例如:
 
 
-###Service:
+### Service:
 
 能够更加清晰的定义应用程序的边界，需要操作数据的时候，通过service层访问DAO层来实现。
 
