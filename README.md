@@ -3,7 +3,7 @@
 # Java传智播客项目学习记录
 
 
-Java SSH 网上商城
+Java SSH 网上商城，只顾传授使用方法，不管解决bug的教学方式，哈哈哈o(╥﹏╥)o
 
 
 ### Struts2 + Spring + Hibernate
