@@ -93,8 +93,10 @@
         <property name="productService" ref="productService"/>
     </bean>
 
-
-
+    <!--购物车的Action-->
+    <bean id="cartAction" class="cn.benjamin.shop.cart.aciton.CartAction" scope="prototype">
+        <property name="productService"  ref="productService"/>
+    </bean>
 
 
 

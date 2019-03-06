@@ -2,6 +2,7 @@ package cn.benjamin.shop.cetegory.vo;
 
 import cn.benjamin.shop.categorysecond.vo.CategorySecond;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  * Created by Benjamin on 2018/12/20.
  */
 
-public class Category {
+public class Category implements Serializable {
 
     private Integer cid;
     private String cname;

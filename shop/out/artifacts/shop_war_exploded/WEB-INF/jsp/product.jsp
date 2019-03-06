@@ -5,8 +5,7 @@
   Time: 23:12
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags"  prefix="s"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -15,6 +14,13 @@
     <title>网上商城</title>
     <link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css">
     <link href="${pageContext.request.contextPath}/css/product.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function saveCart() {
+            document.getElementById("cartForm").submit();
+        }
+    </script>
+
 
 
 </head>
@@ -102,26 +108,29 @@
                 </dd>
             </dl>
         </div>
-        <div class="action">
 
-            <dl class="quantity">
-                <dt>购买数量:</dt>
-                <dd>
-                    <input id="quantity" name="quantity" value="1" maxlength="4" onpaste="return false;" type="text">
-                    <%--<div>--%>
-                        <%--<span id="increase" class="increase">&nbsp;</span>--%>
-                        <%--<span id="decrease" class="decrease">&nbsp;</span>--%>
-                    <%--</div>--%>
-                </dd>
-                <dd>
-                    件
-                </dd>
-            </dl>
-            <div class="buy">
-                <input id="addCart" class="addCart" value="加入购物车" type="button">
-
+        <form id="cartForm" action="${pageContext.request.contextPath}/cart_addCart.action" method="post">
+            <input type="hidden" name="pid" value="<s:property value="model.pid"/>"/>
+            <div class="action">
+                <dl class="quantity">
+                    <dt>购买数量:</dt>
+                    <dd>
+                        <input id="count" name="count" value="1" maxlength="4" onpaste="return false;" type="text">
+                        <%--<div>--%>
+                            <%--<span id="increase" class="increase">&nbsp;</span>--%>
+                            <%--<span id="decrease" class="decrease">&nbsp;</span>--%>
+                        <%--</div>--%>
+                    </dd>
+                    <dd>
+                        件
+                    </dd>
+                </dl>
+                <div class="buy">
+                    <input id="addCart" class="addCart" value="加入购物车" type="button" onclick="saveCart()">
+                </div>
             </div>
-        </div>
+        </form>
+
         <div id="bar" class="bar">
             <ul>
                 <li id="introductionTab">
