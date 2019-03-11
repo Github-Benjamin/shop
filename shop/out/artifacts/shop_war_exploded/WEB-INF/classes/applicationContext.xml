@@ -51,6 +51,8 @@
                 <value>cn/benjamin/shop/cetegory/vo/Category.hbm.xml</value>
                 <value>cn/benjamin/shop/product/vo/Product.hbm.xml</value>
                 <value>cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml</value>
+                <value>cn/benjamin/shop/order/vo/Order.hbm.xml</value>
+                <value>cn/benjamin/shop/order/vo/OrderItem.hbm.xml</value>
             </list>
         </property>
 
@@ -98,6 +100,11 @@
         <property name="productService"  ref="productService"/>
     </bean>
 
+    <!--订单模块的Action-->
+    <bean id="orderAction" class="cn.benjamin.shop.order.action.OrderAction" scope="prototype">
+        <property name="orderService"  ref="orderService"/>
+    </bean>
+
 
 
     <!-- Service的配置  ===========================-->
@@ -113,7 +120,9 @@
         <property name="productDao" ref="productDao"/>
     </bean>
 
-
+    <bean id="orderService" class="cn.benjamin.shop.order.service.OrderService">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>
 
 
 
@@ -130,5 +139,8 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
+    <bean id="orderDao" class="cn.benjamin.shop.order.dao.OrderDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 
 </beans>

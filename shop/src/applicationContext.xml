@@ -101,10 +101,9 @@
     </bean>
 
     <!--订单模块的Action-->
-    <bean id="oderAction" class="cn.benjamin.shop.order.action.OrderAction" scope="prototype">
+    <bean id="orderAction" class="cn.benjamin.shop.order.action.OrderAction" scope="prototype">
         <property name="orderService"  ref="orderService"/>
     </bean>
-
 
 
 
