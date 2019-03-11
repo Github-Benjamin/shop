@@ -10,6 +10,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import org.apache.struts2.ServletActionContext;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -31,11 +33,12 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         this.orderService = orderService;
     }
 
+
     // 生成订单的方法
-    public String save(){
+    public String save() throws ParseException {
         // 1. 保存数据到数据库
         // 订单数据补全
-        order.setOrdertime(new Date());
+        order.setOrdertime(getNowDate());  // fix时间获取bug
         order.setState(1); // 1;未付款 2；已经付款，但是没有发货 3；已经发货，但是没有确认收货 4；交易完成
         // 总计的数据是购物车中信息
         Cart cart = (Cart)ServletActionContext.getRequest().getSession().getAttribute("cart");
@@ -68,5 +71,16 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
 
         return "saveSuccess";
     }
+
+
+    // 获取时间解决bug
+    public static Date getNowDate() throws java.text.ParseException  {
+        Date currentTime = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateString = formatter.format(currentTime);
+        Date date1=formatter.parse(dateString);
+        return date1;
+    }
+
 
 }
