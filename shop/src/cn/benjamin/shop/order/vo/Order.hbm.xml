@@ -17,10 +17,10 @@
         <property name="phone"/>
 
         <!--关联关系：与用户的关系-->
-        <many-to-one name="user" class="cn.benjamin.shop.user.vo.User" column="uid"></many-to-one>
+        <many-to-one name="user" lazy="false" class="cn.benjamin.shop.user.vo.User" column="uid"></many-to-one>
 
         <!--关联关系：与订单项的关系-->
-        <set name="orderItems" cascade="save-update">
+        <set name="orderItems" lazy="false" cascade="save-update">
             <key column="uid"/>
             <one-to-many class="cn.benjamin.shop.order.vo.OrderItem"/>
 

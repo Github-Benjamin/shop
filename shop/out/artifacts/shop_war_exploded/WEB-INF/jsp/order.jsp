@@ -55,40 +55,50 @@
 
         <table>
             <tbody>
+
+            <tr>
+                <th colspan="5">订单编号：<s:property value="model.oid"/></th>
+            </tr>
+
             <tr>
                 <th>图片</th>
                 <th>商品</th>
                 <th>价格</th>
                 <th>数量</th>
                 <th>小计</th>
-                <th>操作</th>
+                <%--<th>操作</th>--%>
             </tr>
 
+
+            <s:iterator var="orderItem" value="model.orderItems"/>
             <tr>
                 <td width="60">
                     <input type="hidden" name="id" value="22"/>
-                    <img src=""/>
+                    <img src="${pageContext.request.contextPath}/<s:property value="#orderItem.product.image"/>"/>
                 </td>
                 <td>
-                    <a target="_blank"><s:property value="product.pname"/></a>
+                    <a target="_blank"><s:property value="#orderItem.product.pname"/></a>
                 </td>
                 <td>
-                    100
+                    <s:property value="#orderItem.product,shop_price"/>
                 </td>
                 <td class="quantity" width="60">
-                    <input type="text" name="count" value="1" maxlength="4" onpaste="return false;"/>
-                    <div>
-                        <span class="increase">&nbsp;</span>
-                        <span class="decrease">&nbsp;</span>
-                    </div>
+                    <s:property value="#orderItem.count"/>
+                    <%--<input type="text" name="count" value="1" maxlength="4" onpaste="return false;"/>--%>
+                    <%--<div>--%>
+                        <%--<span class="increase">&nbsp;</span>--%>
+                        <%--<span class="decrease">&nbsp;</span>--%>
+                    <%--</div>--%>
                 </td>
                 <td width="140">
-                    <span class="subtotal">￥100</span>
+                    <span class="subtotal"><s:property value="#orderItem.subtoal"/></span>
                 </td>
-                <td>
-                    <a href="${pageContext.request.contextPath}/cart_removeCart.action?pid=1" class="delete">删除</a>
-                </td>
+                <%--<td>--%>
+                    <%--<a href="${pageContext.request.contextPath}/cart_removeCart.action?pid=1" class="delete">删除</a>--%>
+                <%--</td>--%>
             </tr>
+
+
 
             </tbody>
         </table>
@@ -96,17 +106,17 @@
         </dl>
         <div class="total">
             <em id="promotion"></em>
-            商品金额: <strong id="effectivePrice">￥100元</strong>
+            商品金额: <strong id="effectivePrice"><s:property value="model.total"/></strong>
         </div>
         <form id="orderForm" action="${pageContext.request.contextPath}/order_payOrder.action" method="post">
             <input type="hidden" name="order.oid" value=""/>
             <div class="span24">
                 <p>
-                    收货地址：<input name="order.user.addr" type="text" value="" style="width:350px" />
+                    收货地址：<input name="user.addr" type="text" value="<s:property value="model.user.addr"/>" style="width:350px" />
                     <br />
-                    收货人&nbsp;&nbsp;&nbsp;：<input name="order.user.username" type="text" value="" style="width:150px" />
+                    收货人&nbsp;&nbsp;&nbsp;：<input name="user.username" type="text" value="<s:property value="model.user.name"/>" style="width:150px" />
                     <br />
-                    联系方式：<input name="order.user.phone" type="text"value="" style="width:150px" />
+                    联系方式：<input name="user.phone" type="text" value="<s:property value="model.user.phone"/>" style="width:150px" />
 
                 </p>
                 <hr />

@@ -6,6 +6,8 @@ import cn.benjamin.shop.order.service.OrderService;
 import cn.benjamin.shop.order.vo.Order;
 import cn.benjamin.shop.order.vo.OrderItem;
 import cn.benjamin.shop.user.vo.User;
+import cn.benjamin.shop.utils.PageBean;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import org.apache.struts2.ServletActionContext;
@@ -25,6 +27,12 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
     private Order order = new Order();
     public Order getModel() {
         return order;
+    }
+
+    // 接收page参数
+    private Integer page;
+    public void setPage(Integer page) {
+        this.page = page;
     }
 
     // 注入OrderService
@@ -68,9 +76,25 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         orderService.save(order);
 
         // 2. 将订单对象显示到页面上
-
+        // 通过值栈的方式进行显示；因为Order显示的对象就是模型驱动的使用对象。
+        // 清空购物车
+        cart.clearCart();
         return "saveSuccess";
+
     }
+
+    // 我的订单的查询
+    public String findByUid(){
+        // 根据用户的id查询
+        User user=(User) ServletActionContext.getRequest().getSession().getAttribute("existUser");
+        // 调用Service
+        PageBean<Order> pageBean = orderService.findByPageUid(user.getUid(),page);
+        // 将分页数据显示到页面上
+        ActionContext.getContext().getValueStack().set("pageBean",pageBean);
+        return "findByUidSuccess";
+
+    }
+
 
 
     // 获取时间解决bug

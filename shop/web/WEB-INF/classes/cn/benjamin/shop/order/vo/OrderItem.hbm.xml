@@ -16,7 +16,7 @@
         <many-to-one name="order" class="cn.benjamin.shop.order.vo.Order" column="oid"/>
 
         <!--关联关系：与商品的关系-->
-        <many-to-one name="product" class="cn.benjamin.shop.product.vo.Product" column="pid"/>
+        <many-to-one name="product"  lazy="false"  class="cn.benjamin.shop.product.vo.Product" column="pid"/>
 
 
     </class>

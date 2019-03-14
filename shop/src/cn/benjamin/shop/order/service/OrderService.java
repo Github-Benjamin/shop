@@ -2,7 +2,10 @@ package cn.benjamin.shop.order.service;
 
 import cn.benjamin.shop.order.dao.OrderDao;
 import cn.benjamin.shop.order.vo.Order;
+import cn.benjamin.shop.utils.PageBean;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * 订单模块：业务层代码
@@ -20,5 +23,33 @@ public class OrderService {
     // 保存订单的业务层代码
     public void save(Order order) {
         orderDao.save(order);
+    }
+
+    // 我的订单业务层的代码
+    public PageBean<Order> findByPageUid(Integer uid, Integer page) {
+        PageBean<Order> pageBean =  new PageBean<Order>();
+        // 设置当前页数
+        pageBean.setPage(page);
+        // 设置每页显示的记录数
+        Integer limit = 5;
+        pageBean.setLimit(limit);
+        // 设置总记录数
+        Integer totalCount = null;
+        totalCount = orderDao.findByCountUid(uid);
+        pageBean.setTotalCount(totalCount);
+        // 设置总页数
+        Integer totalPage = null;
+        if( totalCount % limit == 0 ){
+            totalPage = totalCount / limit;
+        }else {
+            totalPage = totalCount / limit + 1;
+        }
+        pageBean.setTotalPage(totalPage);
+        // 设置每页显示数据集合
+        Integer begin = ( page - 1 ) * limit;
+        List<Order> list = orderDao.findByPageUid(uid,begin,limit);
+        pageBean.setList(list);
+
+        return pageBean;
     }
 }
