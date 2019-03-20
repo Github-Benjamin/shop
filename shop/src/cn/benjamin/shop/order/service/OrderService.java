@@ -52,4 +52,14 @@ public class OrderService {
 
         return pageBean;
     }
+
+    // 业务层：根据订单id查询订单
+    public Order findByOid(Integer oid) {
+        return orderDao.findByOid(oid);
+    }
+
+    // 业务层：修改订单的操作
+    public void update(Order currOrder) {
+        orderDao.updata(currOrder);
+    }
 }

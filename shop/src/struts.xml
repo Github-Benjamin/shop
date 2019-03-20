@@ -51,9 +51,9 @@
         <!--订单的Action-->
         <action name="order_*" class="orderAction"  method="{1}">
             <result name="saveSuccess">/WEB-INF/jsp/order.jsp</result>
-            <result name="findByUidSuccess">/WEB-INF/jsp/orderLite.jsp</result>
+            <result name="findByUidSuccess">/WEB-INF/jsp/orderList.jsp</result>
+            <result name="findByOidSuccess">/WEB-INF/jsp/order.jsp</result>
         </action>
-
 
     </package>
     <!---->
