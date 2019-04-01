@@ -53,6 +53,7 @@
                 <value>cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml</value>
                 <value>cn/benjamin/shop/order/vo/Order.hbm.xml</value>
                 <value>cn/benjamin/shop/order/vo/OrderItem.hbm.xml</value>
+                <value>cn/benjamin/shop/adminuser/vo/AdminUser.hbm.xml</value>
             </list>
         </property>
 
@@ -105,6 +106,10 @@
         <property name="orderService"  ref="orderService"/>
     </bean>
 
+    <!--后台登陆的Action-->
+    <bean id="adminUserAction" class="cn.benjamin.shop.adminuser.action.AdminUserAction" scope="prototype">
+        <property name="adminUserService" ref="adminUserService"/>
+    </bean>
 
 
     <!-- Service的配置  ===========================-->
@@ -124,6 +129,10 @@
         <property name="orderDao" ref="orderDao"/>
     </bean>
 
+    <!--后台登陆的Service-->
+    <bean id="adminUserService" class="cn.benjamin.shop.adminuser.service.AdminUserService">
+        <property name="adminUserDao" ref="adminUserDao"/>
+    </bean>
 
 
     <!-- Dao的配置  ===========================-->
@@ -142,5 +151,11 @@
     <bean id="orderDao" class="cn.benjamin.shop.order.dao.OrderDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+
+    <!--后台登陆的DAO-->
+    <bean id="adminUserDao" class="cn.benjamin.shop.adminuser.dao.AdminUserDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
 
 </beans>
