@@ -7,7 +7,7 @@
 		<link href="${pageContext.request.contextPath}/css/Style1.css" rel="stylesheet" type="text/css" />
 		<script language="javascript" src="${pageContext.request.contextPath}/js/public.js"></script>
 		<script type="text/javascript">
-			function addUser(){
+			function addCategory(){
 				window.location.href = "${pageContext.request.contextPath}/admin/category/add.jsp";
 			}
 		</script>
@@ -19,15 +19,12 @@
 				<TBODY>
 					<tr>
 						<td class="ta_01" align="center" bgColor="#afd1f3">
-							<strong>一级分类 列 表</strong>
+							<strong>一级分类列表</strong>
 						</TD>
 					</tr>
 					<tr>
 						<td class="ta_01" align="right">
-							<button type="button" id="add" name="add" value="添加" class="button_add" onclick="addUser()">
-&#28155;&#21152;
-</button>
-
+							<button type="button" id="add" name="add" value="添加" class="button_add" onclick="addCategory()">&#28155;&#21152;</button>
 						</td>
 					</tr>
 					<tr>
@@ -51,6 +48,7 @@
 										删除
 									</td>
 								</tr>
+
 								<s:iterator var="c" value="cList" status="status">
 										<tr onmouseover="this.style.backgroundColor = 'white'"
 											onmouseout="this.style.backgroundColor = '#F5FAFE';">
@@ -74,7 +72,8 @@
 												</a>
 											</td>
 										</tr>
-									</s:iterator>	
+									</s:iterator>
+
 							</table>
 						</td>
 					</tr>

@@ -111,6 +111,11 @@
         <property name="adminUserService" ref="adminUserService"/>
     </bean>
 
+    <!--配置后台一级分类管理的Action-->
+    <bean id="adminCategoryAction" class="cn.benjamin.shop.cetegory.adminaction.AdminCategoryAction">
+        <property name="categoryService" ref="categoryService"/>
+    </bean>
+
 
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="cn.benjamin.shop.user.service.UserService">

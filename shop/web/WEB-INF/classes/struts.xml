@@ -62,6 +62,12 @@
             <result name="loginFail">/admin/index.jsp</result>
         </action>
 
+        <!--配置后台一级分类管理的Action-->
+        <action name="adminCategory_*" class="adminCategoryAction" method="{1}">
+            <result name="findAll">/admin/category/list.jsp</result>
+            <result name="saveSuccess" type="redirectAction">adminCategory_findAll.action</result>
+            <result name="deleteSuccess" type="redirectAction">adminCategory_findAll.action</result>
+        </action>
 
     </package>
     <!---->

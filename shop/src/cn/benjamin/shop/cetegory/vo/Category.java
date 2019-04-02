@@ -40,4 +40,7 @@ public class Category implements Serializable {
     public void setCategorySeconds(Set<CategorySecond> categorySeconds) {
         this.categorySeconds = categorySeconds;
     }
+
+    public void delete(Category category) {
+    }
 }
