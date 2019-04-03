@@ -116,6 +116,11 @@
         <property name="categoryService" ref="categoryService"/>
     </bean>
 
+    <!--后台二级分类管理的Action-->
+    <bean id="adminCategorySecondAction" class="cn.benjamin.shop.categorysecond.adminaction.AdminCategorySecondAction">
+        <property name="categorySecondService" ref="categorySecondService"/>
+    </bean>
+
 
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="cn.benjamin.shop.user.service.UserService">
@@ -139,6 +144,11 @@
         <property name="adminUserDao" ref="adminUserDao"/>
     </bean>
 
+    <!--二级分类的Service-->
+    <bean id="categorySecondService" class="cn.benjamin.shop.categorysecond.service.CategorySecondService">
+        <property name="categorySecondDao" ref="categorySecondDao"/>
+    </bean>
+
 
     <!-- Dao的配置  ===========================-->
     <bean id="userDao" class="cn.benjamin.shop.user.dao.UserDao">
@@ -159,6 +169,11 @@
 
     <!--后台登陆的DAO-->
     <bean id="adminUserDao" class="cn.benjamin.shop.adminuser.dao.AdminUserDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!--二级分类的DAO-->
+    <bean id="categorySecondDao" class="cn.benjamin.shop.categorysecond.dao.CategorySecondDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 

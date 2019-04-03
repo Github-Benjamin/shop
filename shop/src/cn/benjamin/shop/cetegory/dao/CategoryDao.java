@@ -32,4 +32,9 @@ public class CategoryDao extends HibernateDaoSupport {
     public void delete(Category category) {
         this.getHibernateTemplate().delete(category);
     }
+
+    // DAO层修改一级分类的方法
+    public void update(Category category) {
+        this.getHibernateTemplate().update(category);
+    }
 }

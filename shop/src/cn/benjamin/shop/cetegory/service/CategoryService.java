@@ -14,7 +14,6 @@ import java.util.List;
 @Transactional
 public class CategoryService {
 
-
     // 注入 CategoryDao
     private CategoryDao categoryDao;
 
@@ -40,5 +39,10 @@ public class CategoryService {
     // 业务层删除一级分类的方法
     public void delete(Category category) {
          categoryDao.delete(category);
+    }
+
+    // 业务层修改一级分类的方法
+    public void update(Category category) {
+        categoryDao.update(category);
     }
 }
