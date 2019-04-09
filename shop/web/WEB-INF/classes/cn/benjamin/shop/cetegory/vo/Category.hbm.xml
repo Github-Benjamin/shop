@@ -13,7 +13,7 @@
 
         <!--一对多配置-->
         <!--配置二级分类的集合-->
-        <set order-by="csid" name="categorySeconds" lazy="false">
+        <set order-by="csid" cascade="delete" name="categorySeconds" lazy="false">
             <key column="cid"/>
             <one-to-many class="cn.benjamin.shop.categorysecond.vo.CategorySecond"/>
         </set>

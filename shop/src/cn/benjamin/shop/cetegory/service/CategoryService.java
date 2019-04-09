@@ -3,7 +3,6 @@ package cn.benjamin.shop.cetegory.service;
 import cn.benjamin.shop.cetegory.dao.CategoryDao;
 import cn.benjamin.shop.cetegory.vo.Category;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 /**
@@ -22,8 +21,8 @@ public class CategoryService {
     }
 
     // 业务层查询所有一级分类的方法
-    public List<Category> findall() {
-        return categoryDao.findall();
+    public List<Category> findAll() {
+        return categoryDao.findAll();
     }
 
     // 业务层保存一级分类的房

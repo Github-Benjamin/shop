@@ -34,7 +34,7 @@ public class IndexAction extends ActionSupport {
     public String execute(){
 
         // 查询所有一级分类集合
-        List<Category> cList = categoryService.findall();
+        List<Category> cList = categoryService.findAll();
         // 将一级分类存入到Session的范围:
         ActionContext.getContext().getSession().put("cList", cList);
 

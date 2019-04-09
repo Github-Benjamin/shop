@@ -12,7 +12,7 @@ import java.util.List;
 public class CategoryDao extends HibernateDaoSupport {
 
     // DAO层的查询所有一级分类的方法
-    public List<Category> findall() {
+    public List<Category> findAll() {
         String hql = "from Category";
         List<Category> list = this.getHibernateTemplate().find(hql);
         return list;

@@ -29,7 +29,7 @@ public class AdminCategoryAction extends ActionSupport implements ModelDriven<Ca
     // 后台执行查询所有一级分类的方法
     public String findAll(){
         // 查询所有一级分类
-        List<Category> cList = categoryService.findall();
+        List<Category> cList = categoryService.findAll();
         // 将集合的数据显示到页面
         ActionContext.getContext().getValueStack().set("cList",cList);
         return "findAll";

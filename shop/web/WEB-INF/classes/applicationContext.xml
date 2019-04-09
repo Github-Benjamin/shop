@@ -119,6 +119,7 @@
     <!--后台二级分类管理的Action-->
     <bean id="adminCategorySecondAction" class="cn.benjamin.shop.categorysecond.adminaction.AdminCategorySecondAction">
         <property name="categorySecondService" ref="categorySecondService"/>
+        <property name="categoryService" ref="categoryService"/>
     </bean>
 
 
