@@ -13,7 +13,7 @@
 
         <!--多对一配置-->
         <!--二级分类与一级分类的关联-->
-        <many-to-one name="category" lazy="false" class="cn.benjamin.shop.cetegory.vo.Category" column="cid"></many-to-one>
+        <many-to-one name="category" lazy="false" class="cn.benjamin.shop.category.vo.Category" column="cid"></many-to-one>
 
         <!--二级分类与商品的关联-->
         <set name="products">

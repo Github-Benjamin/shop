@@ -1,6 +1,6 @@
 package cn.benjamin.shop.product.action;
 
-import cn.benjamin.shop.cetegory.service.CategoryService;
+import cn.benjamin.shop.category.service.CategoryService;
 import cn.benjamin.shop.product.service.ProductService;
 import cn.benjamin.shop.product.vo.Product;
 import cn.benjamin.shop.utils.PageBean;

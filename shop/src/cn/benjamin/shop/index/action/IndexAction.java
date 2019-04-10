@@ -1,7 +1,7 @@
 package cn.benjamin.shop.index.action;
 
-import cn.benjamin.shop.cetegory.service.CategoryService;
-import cn.benjamin.shop.cetegory.vo.Category;
+import cn.benjamin.shop.category.service.CategoryService;
+import cn.benjamin.shop.category.vo.Category;
 import cn.benjamin.shop.product.service.ProductService;
 import cn.benjamin.shop.product.vo.Product;
 import com.opensymphony.xwork2.ActionContext;

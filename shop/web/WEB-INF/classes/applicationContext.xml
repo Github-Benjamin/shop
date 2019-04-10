@@ -48,7 +48,7 @@
         <property name="mappingResources">
             <list>
                 <value>cn/benjamin/shop/user/vo/User.hbm.xml</value>
-                <value>cn/benjamin/shop/cetegory/vo/Category.hbm.xml</value>
+                <value>cn/benjamin/shop/category/vo/Category.hbm.xml</value>
                 <value>cn/benjamin/shop/product/vo/Product.hbm.xml</value>
                 <value>cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml</value>
                 <value>cn/benjamin/shop/order/vo/Order.hbm.xml</value>
@@ -97,7 +97,7 @@
     </bean>
 
     <!--购物车的Action-->
-    <bean id="cartAction" class="cn.benjamin.shop.cart.aciton.CartAction" scope="prototype">
+    <bean id="cartAction" class="cn.benjamin.shop.cart.action.CartAction" scope="prototype">
         <property name="productService"  ref="productService"/>
     </bean>
 
@@ -112,12 +112,12 @@
     </bean>
 
     <!--配置后台一级分类管理的Action-->
-    <bean id="adminCategoryAction" class="cn.benjamin.shop.cetegory.adminaction.AdminCategoryAction">
+    <bean id="adminCategoryAction" class="cn.benjamin.shop.category.adminaction.AdminCategoryAction" scope="prototype">
         <property name="categoryService" ref="categoryService"/>
     </bean>
 
     <!--后台二级分类管理的Action-->
-    <bean id="adminCategorySecondAction" class="cn.benjamin.shop.categorysecond.adminaction.AdminCategorySecondAction">
+    <bean id="adminCategorySecondAction" class="cn.benjamin.shop.categorysecond.adminaction.AdminCategorySecondAction" scope="prototype">
         <property name="categorySecondService" ref="categorySecondService"/>
         <property name="categoryService" ref="categoryService"/>
     </bean>
@@ -128,7 +128,7 @@
         <property name="userDao" ref="userDao"/>
     </bean>
 
-    <bean id="categoryService" class="cn.benjamin.shop.cetegory.service.CategoryService">
+    <bean id="categoryService" class="cn.benjamin.shop.category.service.CategoryService">
         <property name="categoryDao" ref="categoryDao"/>
     </bean>
 
@@ -156,7 +156,7 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="categoryDao" class="cn.benjamin.shop.cetegory.dao.CategoryDao">
+    <bean id="categoryDao" class="cn.benjamin.shop.category.dao.CategoryDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 

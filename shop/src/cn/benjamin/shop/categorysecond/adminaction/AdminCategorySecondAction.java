@@ -2,8 +2,8 @@ package cn.benjamin.shop.categorysecond.adminaction;
 
 import cn.benjamin.shop.categorysecond.service.CategorySecondService;
 import cn.benjamin.shop.categorysecond.vo.CategorySecond;
-import cn.benjamin.shop.cetegory.service.CategoryService;
-import cn.benjamin.shop.cetegory.vo.Category;
+import cn.benjamin.shop.category.service.CategoryService;
+import cn.benjamin.shop.category.vo.Category;
 import cn.benjamin.shop.utils.PageBean;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -39,6 +39,7 @@ public class AdminCategorySecondAction extends ActionSupport implements ModelDri
     public void setCategoryService(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
+
 
     // 查询二级分类的方法
     public String findAll(){

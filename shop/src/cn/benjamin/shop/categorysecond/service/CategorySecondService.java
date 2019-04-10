@@ -3,6 +3,7 @@ package cn.benjamin.shop.categorysecond.service;
 import cn.benjamin.shop.categorysecond.dao.CategorySecondDao;
 import cn.benjamin.shop.categorysecond.vo.CategorySecond;
 import cn.benjamin.shop.utils.PageBean;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
  * 二级分类管理的业务层类
  * Created by Benjamin on 2019/1/5.
  */
-
+@Transactional
 public class CategorySecondService {
     //注入二级分类的DAO
     private CategorySecondDao categorySecondDao;
@@ -27,14 +28,14 @@ public class CategorySecondService {
         int limit = 10;
         pageBean.setLimit(limit);
         // 设置总记录
-        int totalCout = categorySecondDao.findCount();
-        pageBean.setTotalPage(totalCout);
+        int totalCount = categorySecondDao.findCount();
+        pageBean.setTotalCount(totalCount);
         // 设置总页数
         int totalPage = 0;
-        if(totalCout % limit == 0 ){
-            totalPage = totalCout / limit;
+        if(totalCount % limit == 0 ){
+            totalPage = totalCount / limit;
         }else {
-            totalPage = totalCout / limit +1;
+            totalPage = totalCount / limit +1;
         }
         pageBean.setTotalPage(totalPage);
         // 设置每页显示数据集合
