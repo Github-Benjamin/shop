@@ -14,7 +14,7 @@ public class CategorySecond {
     private Integer csid;
     private String csname;
     // 所属一级分类.存的是一级分类的对象.
-    private Category category;
+    private Category category = new Category();
     // 配置商品集合
     private Set<Product> products = new HashSet<Product>();
     public Integer getCsid() {

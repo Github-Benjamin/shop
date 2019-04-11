@@ -61,4 +61,8 @@ public class CategorySecondService {
         categorySecondDao.delete(categorySecond);
     }
 
+    // 业务层修改二级分类方法
+    public void update(CategorySecond categorySecond) {
+        categorySecondDao.update(categorySecond);
+    }
 }

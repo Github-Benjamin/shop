@@ -75,8 +75,15 @@
         <action name="adminCategorySecond_*" class="adminCategorySecondAction" method="{1}">
             <result name="findAll">/admin/categorysecond/list.jsp</result>
             <result name="addPageSuccess">/admin/categorysecond/add.jsp</result>
-            <result name="saveSuccess" type="redirectAction">adminCategorySecond_findAll?page=1</result>
-            <result name="deleteSuccess" type="redirectAction">adminCategorySecond_findAll?page=1</result>
+            <result name="saveSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
+            <result name="deleteSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
+            <result name="editSuccess">/admin/categorysecond/edit.jsp</result>
+            <result name="updateSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
+        </action>
+
+        <!--配置商品管理的Action-->
+        <action name="adminProduct_*" class="adminProductAction" method="{1}">
+            <result name="findAll">/admin/product/list.jsp</result>
         </action>
 
 

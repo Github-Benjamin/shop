@@ -47,4 +47,9 @@ public class CategorySecondDao extends HibernateDaoSupport {
     public void delete(CategorySecond categorySecond) {
         this.getHibernateTemplate().delete(categorySecond);
     }
+
+    // DAO层修改二级分类的方法
+    public void update(CategorySecond categorySecond) {
+        this.getHibernateTemplate().update(categorySecond);
+    }
 }

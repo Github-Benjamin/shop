@@ -122,6 +122,12 @@
         <property name="categoryService" ref="categoryService"/>
     </bean>
 
+    <!--后台商品的管理的Action-->
+    <bean id="adminProductAction" class="cn.benjamin.shop.product.adminaction.AdminProductAction"  scope="prototype">
+        <property name="productService" ref="productService"/>
+    </bean>
+
+
 
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="cn.benjamin.shop.user.service.UserService">
