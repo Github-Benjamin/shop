@@ -125,6 +125,7 @@
     <!--后台商品的管理的Action-->
     <bean id="adminProductAction" class="cn.benjamin.shop.product.adminaction.AdminProductAction"  scope="prototype">
         <property name="productService" ref="productService"/>
+        <property name="categorySecondService" ref="categorySecondService"/>
     </bean>
 
 

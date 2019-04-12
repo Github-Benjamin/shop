@@ -7,7 +7,7 @@
 	<link href="${pageContext.request.contextPath}/css/Style1.css" rel="stylesheet" type="text/css" />
 	<script language="javascript" src="${pageContext.request.contextPath}/js/public.js"></script>
 	<script type="text/javascript">
-        function addCategorySecond(){
+        function addProduct (){
             window.location.href = "${pageContext.request.contextPath}/adminProduct_addPage.action";
         }
 	</script>
@@ -24,7 +24,7 @@
 		</tr>
 		<tr>
 			<td class="ta_01" align="right">
-				<button type="button" id="add" name="add" value="添加" class="button_add" onclick="addCategorySecond()">
+				<button type="button" id="add" name="add" value="添加" class="button_add" onclick="addProduct()">
 					&#28155;&#21152;
 				</button>
 
@@ -93,13 +93,13 @@
 							</td>
 
 							<td align="center" style="HEIGHT: 22px">
-								<a href="${ pageContext.request.contextPath }/adminCategorySecond_edit.action?csid=<s:property value="#cs.csid"/>">
+								<a href="${ pageContext.request.contextPath }/adminProduct_edit.action?pid=<s:property value="#product.pid"/>">
 									<img src="${pageContext.request.contextPath}/images/i_edit.gif" border="0" style="CURSOR: hand">
 								</a>
 							</td>
 
 							<td align="center" style="HEIGHT: 22px">
-								<a href="${ pageContext.request.contextPath }/adminCategorySecond_delete.action?csid=<s:property value="#cs.csid"/>">
+								<a href="${ pageContext.request.contextPath }/adminProduct_delete.action?pid=<s:property value="#product.pid"/>">
 									<img src="${pageContext.request.contextPath}/images/i_del.gif" width="16" height="16" border="0" style="CURSOR: hand">
 								</a>
 							</td>

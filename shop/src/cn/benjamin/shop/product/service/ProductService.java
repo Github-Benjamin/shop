@@ -137,4 +137,14 @@ public class ProductService {
 
         return pageBean;
     }
+
+    // 业务层保存商品的方法
+    public void save(Product product) {
+        productDao.save(product);
+    }
+
+    // 业务层删除商品的方法
+    public void delete(Product product) {
+        productDao.delete(product);
+    }
 }
