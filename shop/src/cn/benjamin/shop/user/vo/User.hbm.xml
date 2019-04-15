@@ -17,5 +17,6 @@
         <property name="addr"/>
         <property name="state"/>
         <property name="code"/>
+
     </class>
 </hibernate-mapping>
