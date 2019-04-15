@@ -87,7 +87,17 @@
             <result name="addPageSuccess">/admin/product/add.jsp</result>
             <result name="saveSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
             <result name="deleteSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
+            <result name="editSuccess">/admin/product/edit.jsp</result>
+            <result name="updateSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
         </action>
+
+        <!--配置订单管理的Action-->
+        <action name="adminOrder_*" class="adminOrderAction" method="{1}">
+            <result name="findAll">/admin/order/list.jsp</result>
+            <result name="updateStateSuccess" type="redirectAction">adminOrder_findAll.action?page=1</result>
+            <result name="findByStateSuccess">/admin/order/list.jsp</result>
+        </action>
+
 
 
     </package>

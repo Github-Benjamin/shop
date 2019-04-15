@@ -83,7 +83,6 @@ public class AdminProductAction extends ActionSupport implements ModelDriven<Pro
         return "addPageSuccess";
     }
 
-
     // 保存商品的方法
     public String save() throws IOException, ParseException {
         // 调用Service完成保存的操作
@@ -102,7 +101,6 @@ public class AdminProductAction extends ActionSupport implements ModelDriven<Pro
         return "saveSuccess";
     }
 
-
     // 删除商品的方法
     public String delete(){
         // 根据id查询商品的信息
@@ -114,9 +112,41 @@ public class AdminProductAction extends ActionSupport implements ModelDriven<Pro
             File file = new File(realPath);
             file.delete();
         }
-
         productService.delete(product);
         return "deleteSuccess";
+    }
+
+    // 编辑商品的方法
+    public String edit(){
+        // 根据商品id查询商品信息
+        product = productService.findByPid(product.getPid());
+        //查询所有的二级分类的集合
+        List<CategorySecond> csList = categorySecondService.findAll();
+        // 通过值栈进行保存数据
+        ActionContext.getContext(). getValueStack().set("csList",csList);
+        return "editSuccess";
+    }
+
+
+    // 修改商品的方法
+    public String update() throws ParseException, IOException {
+        product.setPdate(OrderAction.getNowDate());
+        if(upload != null){
+            // 将原来的图片删除
+            String path =product.getImage();
+            File file = new File(ServletActionContext.getServletContext().getRealPath("/" + path));
+            file.delete();
+            // 获得文件上传的磁盘绝对路径
+            String realPath = ServletActionContext.getServletContext().getRealPath("/products");
+            // 创建一个文件
+            File diskFile = new File(realPath + "//" + uploadFileName);
+            // 文件上传
+            FileUtils.copyFile(upload,diskFile);
+            product.setImage("products/" + uploadFileName );
+
+        }
+        productService.update(product);
+        return "updateSuccess";
     }
 
 

@@ -17,6 +17,7 @@ import java.util.List;
  */
 
 public class AdminCategorySecondAction extends ActionSupport implements ModelDriven<CategorySecond> {
+
     // 模型驱动使用的对象
     private CategorySecond categorySecond = new CategorySecond();
     public CategorySecond getModel() {

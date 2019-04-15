@@ -42,4 +42,44 @@ public class OrderDao extends HibernateDaoSupport {
     public void updata(Order currOrder) {
         this.getHibernateTemplate().update(currOrder);
     }
+
+    // DAO层查找所有订单
+    public int findByCount() {
+        String hql = "select count(*) from Order";
+        List<Long> list= this.getHibernateTemplate().find(hql);
+        if(list != null && list.size() > 0){
+            return list.get(0).intValue();
+        }
+        return 0;
+    }
+
+    // DAO层分页查找分类订单的方法
+    public List<Order> findByPage(int begin, Integer limit) {
+        String hql = "from Order order by oid desc";
+        List<Order> list = this.getHibernateTemplate().execute(new PageHibernateCallback<Order>(hql,null,begin,limit));
+        if(list != null && list.size() > 0){
+            return list;
+        }
+        return null;
+    }
+
+    // DAO层查找分类订单
+    public Integer findByCountState(Integer state) {
+        String hql = "select count(*) from Order Where state = ?";
+        List<Long> list= this.getHibernateTemplate().find(hql,state);
+        if(list != null && list.size() > 0){
+            return list.get(0).intValue();
+        }
+        return 0;
+    }
+
+    // DAO层层分页查找分类订单的方法
+    public List<Order> findByPageState(Integer state,int begin, Integer limit) {
+        String hql = "from Order Where state = ? order by oid desc";
+        List<Order> list = this.getHibernateTemplate().execute(new PageHibernateCallback<Order>(hql,new Object[]{state},begin,limit));
+        if(list != null && list.size() > 0){
+            return list;
+        }
+        return null;
+    }
 }
