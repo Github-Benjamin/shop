@@ -6,11 +6,62 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="${pageContext.request.contextPath}/css/Style1.css" rel="stylesheet" type="text/css" />
 	<script language="javascript" src="${pageContext.request.contextPath}/js/public.js"></script>
+
 	<script type="text/javascript">
-        function addProduct (){
-            window.location.href = "${pageContext.request.contextPath}/adminProduct_addPage.action";
+		function showDetail(oid) {
+
+		    // 蝴蝶按钮对象
+			var but = document.getElementById( "but" + oid);
+		    // 获得div对象
+			var div1 = document.getElementById("div" + oid )
+
+			if( but.value == "订单详情"){
+                // 1、创建异步对象
+                var xhr = createXmlHttp();
+                // 2、设置监听
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState == 4){
+                        if(xhr.status == 200){
+                            // 获得div的对象
+                            div1.innerHTML = xhr.responseText;
+                        }
+                    }
+                }
+                // 3、打开链接
+                xhr.open("GET","${pageContext.request.contextPath}/adminOrder_findOrderItem.action?time="+ new Date().getTime() + "&oid="+oid,true);
+                // 4、发送
+                xhr.send(null);
+                but.value = "关闭";
+			}else {
+			    but.value = "订单详情";
+			    div1.innerHTML = "";
+			}
+
         }
+
+        function createXmlHttp(){
+            var xmlHttp;
+            try{ // Firefox, Opera 8.0+, Safari
+                xmlHttp=new XMLHttpRequest();
+            }
+            catch (e){
+                try{// Internet Explorer
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (e){
+                    try{
+                        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch (e){}
+                }
+            }
+            return xmlHttp;
+        }
+
+
 	</script>
+	
+	
 </HEAD>
 <body>
 <br>
@@ -22,14 +73,7 @@
 				<strong>订单列表</strong>
 			</TD>
 		</tr>
-		<%--<tr>--%>
-			<%--<td class="ta_01" align="right">--%>
-				<%--<button type="button" id="add" name="add" value="添加" class="button_add" onclick="addProduct()">--%>
-					<%--&#28155;&#21152;--%>
-				<%--</button>--%>
 
-			<%--</td>--%>
-		<%--</tr>--%>
 		<tr>
 			<td class="ta_01" align="center" bgColor="#f5fafe">
 				<table cellspacing="0" cellpadding="1" rules="all"
@@ -38,22 +82,22 @@
 					<tr
 							style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; HEIGHT: 25px; BACKGROUND-COLOR: #afd1f3">
 
-						<td align="center" width="18%">
+						<td align="center" width="7%">
 							序号
 						</td>
-						<td align="center" width="17%">
+						<td align="center" width="10%">
 							订单ID
 						</td>
-						<td align="center" width="17%">
+						<td align="center" width="10%">
 							订单总额
 						</td>
-						<td align="center" width="17%">
+						<td align="center" width="10%">
 							收货人
 						</td>
-						<td align="center" width="17%">
+						<td align="center" width="10%">
 							订单状态
 						</td>
-						<td width="7%" align="center">
+						<td width="*%" align="center">
 							订单详情
 						</td>
 					</tr>

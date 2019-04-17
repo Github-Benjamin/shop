@@ -1,6 +1,7 @@
 package cn.benjamin.shop.order.dao;
 
 import cn.benjamin.shop.order.vo.Order;
+import cn.benjamin.shop.order.vo.OrderItem;
 import cn.benjamin.shop.utils.PageHibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
@@ -77,6 +78,16 @@ public class OrderDao extends HibernateDaoSupport {
     public List<Order> findByPageState(Integer state,int begin, Integer limit) {
         String hql = "from Order Where state = ? order by oid desc";
         List<Order> list = this.getHibernateTemplate().execute(new PageHibernateCallback<Order>(hql,new Object[]{state},begin,limit));
+        if(list != null && list.size() > 0){
+            return list;
+        }
+        return null;
+    }
+
+    // DAO层的根据订单的id查询订单项的方法
+    public List<OrderItem> findOrderItem(Integer oid) {
+        String hql = "from OrderItem oi where oi.order.oid = ?";
+        List<OrderItem> list = this.getHibernateTemplate().find(hql,oid);
         if(list != null && list.size() > 0){
             return list;
         }

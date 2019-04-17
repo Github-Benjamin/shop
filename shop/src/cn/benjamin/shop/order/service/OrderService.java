@@ -2,6 +2,7 @@ package cn.benjamin.shop.order.service;
 
 import cn.benjamin.shop.order.dao.OrderDao;
 import cn.benjamin.shop.order.vo.Order;
+import cn.benjamin.shop.order.vo.OrderItem;
 import cn.benjamin.shop.utils.PageBean;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -118,5 +119,10 @@ public class OrderService {
 
         return pageBean;
 
+    }
+
+    // 业务层根据订单id查询订单项的方法
+    public List<OrderItem> findOrderItem(Integer oid) {
+        return orderDao.findOrderItem(oid);
     }
 }

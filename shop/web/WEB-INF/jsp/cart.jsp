@@ -25,7 +25,7 @@
     <div class="span5">
         <div class="logo">
             <a href="http://localhost:8080/mango/">
-                <img src="${pageContext.request.contextPath}/image/r___________renleipic_01/logo.gif" alt="传智播客">
+                <img src="${pageContext.request.contextPath}/image/r___________renleipic_01/logo.gif" alt="Benjamin">
             </a>
         </div>
     </div>
@@ -59,7 +59,6 @@
 
                     <tr>
                         <td width="60">
-                            <input type="hidden" name="id" value="22">
                             <img src="${pageContext.request.contextPath}/<s:property value="#cartItem.product.image"/>">
                         </td>
                         <td>

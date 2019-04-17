@@ -25,7 +25,7 @@
     <div class="span5">
         <div class="logo">
             <a href="${pageContext.request.contextPath}/网上商城/index.htm">
-                <img src="${pageContext.request.contextPath}/image/r___________renleipic_01/logo.gif" alt="传智播客"/>
+                <img src="${pageContext.request.contextPath}/image/r___________renleipic_01/logo.gif" alt="Benjamin"/>
             </a>
         </div>
     </div>
@@ -117,7 +117,7 @@
                 <p>
                     收货地址：<input name="addr" type="text" value="<s:property value="model.user.addr"/>" style="width:350px" />
                     <br />
-                    收货人&nbsp;&nbsp;&nbsp;：<input name="username" type="text" value="<s:property value="model.user.name"/>" style="width:150px" />
+                    收货人&nbsp;&nbsp;&nbsp;：<input name="name" type="text" value="<s:property value="model.user.name"/>" style="width:150px" />
                     <br />
                     联系方式：<input name="phone" type="text" value="<s:property value="model.user.phone"/>" style="width:150px" />
 

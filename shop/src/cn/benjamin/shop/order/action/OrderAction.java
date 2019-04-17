@@ -195,4 +195,12 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         return "meg";
     }
 
+    // 发货后的确认收货操作
+    public String updateState(){
+        Order currOrder = orderService.findByOid(order.getOid());
+        currOrder.setState(4);
+        orderService.update(currOrder);
+        return "updateState";
+    }
+
 }

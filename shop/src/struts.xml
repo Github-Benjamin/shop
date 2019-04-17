@@ -9,6 +9,12 @@
     <constant name="struts.devMode" value="false" />
 
     <package name="shop" extends="struts-default" namespace="/">
+
+        <!--配置拦截器-->
+        <interceptors>
+            <interceptor name="privilegeInterceptor" class="cn.benjamin.shop.interceptor.PrivilegeInterceptor"/>
+        </interceptors>
+
         <!--配置全局访问-->
         <global-results>
             <result name="msg">/WEB-INF/jsp/msg.jsp</result>
@@ -53,6 +59,7 @@
             <result name="saveSuccess">/WEB-INF/jsp/order.jsp</result>
             <result name="findByUidSuccess">/WEB-INF/jsp/orderList.jsp</result>
             <result name="findByOidSuccess">/WEB-INF/jsp/order.jsp</result>
+            <result name="updateStateSuccess" type="redirectAction">order_findByUid.action?page=1</result>
         </action>
 
 
@@ -60,6 +67,12 @@
         <action name="adminUser_*" class="adminUserAction" method="{1}">
             <result name="loginSuccess" type="redirect">/admin/home.jsp</result>
             <result name="loginFail">/admin/index.jsp</result>
+
+            <interceptor-ref name="privilegeInterceptor">
+                <param name="excludeMethods">login</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+
         </action>
 
         <!--配置后台一级分类管理的Action-->
@@ -69,6 +82,9 @@
             <result name="deleteSuccess" type="redirectAction">adminCategory_findAll.action</result>
             <result name="editSuccess">/admin/category/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminCategory_findAll.action</result>
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
         </action>
 
         <!--配置后台二级分类管理的Action-->
@@ -79,6 +95,9 @@
             <result name="deleteSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
             <result name="editSuccess">/admin/categorysecond/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
         </action>
 
         <!--配置商品管理的Action-->
@@ -89,6 +108,9 @@
             <result name="deleteSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
             <result name="editSuccess">/admin/product/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
         </action>
 
         <!--配置订单管理的Action-->
@@ -96,9 +118,11 @@
             <result name="findAll">/admin/order/list.jsp</result>
             <result name="updateStateSuccess" type="redirectAction">adminOrder_findAll.action?page=1</result>
             <result name="findByStateSuccess">/admin/order/list.jsp</result>
+            <result name="findOrderItem">/admin/order/orderItem.jsp</result>
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
         </action>
-
-
 
     </package>
     <!---->

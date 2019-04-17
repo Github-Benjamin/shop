@@ -2,10 +2,13 @@ package cn.benjamin.shop.order.adminaction;
 
 import cn.benjamin.shop.order.service.OrderService;
 import cn.benjamin.shop.order.vo.Order;
+import cn.benjamin.shop.order.vo.OrderItem;
 import cn.benjamin.shop.utils.PageBean;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+
+import java.util.List;
 
 /**
  * Created by Benjamin on 2019/4/15.
@@ -54,6 +57,15 @@ public class AdminOrderAction extends ActionSupport implements ModelDriven<Order
         PageBean<Order> pageBean = orderService.findByPageState(page,order.getState());
         ActionContext.getContext().getValueStack().set("pageBean",pageBean);
         return "findByStateSuccess";
+    }
+
+    // 根据订单id查询订单项
+    public String findOrderItem (){
+        // 根据订单id查询订单项
+        List<OrderItem> list = orderService.findOrderItem(order.getOid());
+        // 将OrderItem保存到值栈中
+        ActionContext.getContext().getValueStack().set("list",list);
+        return "findOrderItem";
     }
 
 
