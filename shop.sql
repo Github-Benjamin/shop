@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50722
 File Encoding         : 65001
 
-Date: 2019-04-02 23:07:34
+Date: 2019-04-19 00:45:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,7 +39,7 @@ CREATE TABLE `category` (
   `cid` int(11) NOT NULL AUTO_INCREMENT,
   `cname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of category
@@ -51,6 +51,9 @@ INSERT INTO `category` VALUES ('4', '珠宝配饰');
 INSERT INTO `category` VALUES ('5', '手机数码');
 INSERT INTO `category` VALUES ('6', '家电办公');
 INSERT INTO `category` VALUES ('7', '护肤彩妆');
+INSERT INTO `category` VALUES ('12', 'Bejamin');
+INSERT INTO `category` VALUES ('13', 'Bejamin1');
+INSERT INTO `category` VALUES ('14', 'Bejamin2');
 
 -- ----------------------------
 -- Table structure for categorysecond
@@ -63,7 +66,7 @@ CREATE TABLE `categorysecond` (
   PRIMARY KEY (`csid`),
   KEY `FK936FCAF21DB1FD15` (`cid`),
   CONSTRAINT `FK936FCAF21DB1FD15` FOREIGN KEY (`cid`) REFERENCES `category` (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of categorysecond
@@ -102,8 +105,9 @@ INSERT INTO `categorysecond` VALUES ('32', '办公耗材', '6');
 INSERT INTO `categorysecond` VALUES ('33', '美容护肤', '7');
 INSERT INTO `categorysecond` VALUES ('34', '强效保养', '7');
 INSERT INTO `categorysecond` VALUES ('35', '超值彩妆', '7');
-INSERT INTO `categorysecond` VALUES ('36', '换季保养', '7');
-INSERT INTO `categorysecond` VALUES ('40', '组合柜222', null);
+INSERT INTO `categorysecond` VALUES ('96', 'Benjamin二级分类', '12');
+INSERT INTO `categorysecond` VALUES ('97', 'Benjamin二级分类2', '14');
+INSERT INTO `categorysecond` VALUES ('98', 'Benjamin二级分类', '12');
 
 -- ----------------------------
 -- Table structure for orderitem
@@ -123,7 +127,7 @@ CREATE TABLE `orderitem` (
   CONSTRAINT `FK60163F61EED4D466` FOREIGN KEY (`uid`) REFERENCES `orders` (`oid`),
   CONSTRAINT `FKE8B2AB6166C01961` FOREIGN KEY (`oid`) REFERENCES `orders` (`oid`),
   CONSTRAINT `FKE8B2AB6171DB7AE4` FOREIGN KEY (`pid`) REFERENCES `product` (`pid`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orderitem
@@ -157,6 +161,18 @@ INSERT INTO `orderitem` VALUES ('26', '1', '299', '60', '16', '16');
 INSERT INTO `orderitem` VALUES ('27', '1', '358', '47', '17', '17');
 INSERT INTO `orderitem` VALUES ('28', '1', '83', '68', '17', '17');
 INSERT INTO `orderitem` VALUES ('29', '1', '358', '51', '17', '17');
+INSERT INTO `orderitem` VALUES ('30', '1', '172', '2', '18', '18');
+INSERT INTO `orderitem` VALUES ('32', '1', '83', '68', '19', '19');
+INSERT INTO `orderitem` VALUES ('33', '1', '119', '3', '19', '19');
+INSERT INTO `orderitem` VALUES ('34', '4', '1344', '8', '21', '21');
+INSERT INTO `orderitem` VALUES ('36', '1', '172', '2', '21', '21');
+INSERT INTO `orderitem` VALUES ('37', '11', '913', '68', '22', '22');
+INSERT INTO `orderitem` VALUES ('38', '1', '336', '8', '23', '23');
+INSERT INTO `orderitem` VALUES ('39', '1', '358', '44', '23', '23');
+INSERT INTO `orderitem` VALUES ('40', '1', '198', '30', '24', '24');
+INSERT INTO `orderitem` VALUES ('41', '1', '299', '57', '25', '25');
+INSERT INTO `orderitem` VALUES ('42', '1', '358', '51', '26', '26');
+INSERT INTO `orderitem` VALUES ('43', '1', '299', '57', '27', '27');
 
 -- ----------------------------
 -- Table structure for orders
@@ -174,28 +190,38 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`oid`),
   KEY `FKC3DF62E5AA3D9C7` (`uid`),
   CONSTRAINT `FKC3DF62E5AA3D9C7` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
-INSERT INTO `orders` VALUES ('1', '441', '2019-03-11 23:27:18', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('2', '382', '2019-03-13 22:18:01', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('3', '471', '2019-03-14 23:37:16', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('4', '372', '2019-03-14 23:37:44', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('5', '83', '2019-03-14 23:37:54', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('6', '299', '2019-03-14 23:38:15', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('7', '198', '2019-03-14 23:38:27', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('8', '35800', '2019-03-14 23:46:57', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('9', '716', '2019-03-20 21:49:28', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('10', '716', '2019-03-20 21:49:38', '1', null, null, null, '14');
-INSERT INTO `orders` VALUES ('11', '477', '2019-03-20 21:55:34', '1', null, null, null, '15');
-INSERT INTO `orders` VALUES ('12', '1162', '2019-03-20 21:55:59', '1', null, null, null, '15');
-INSERT INTO `orders` VALUES ('13', '299', '2019-03-20 23:01:36', '1', null, '四川省成都市高新区软件园', '18081011501', '15');
-INSERT INTO `orders` VALUES ('14', '0', '2019-03-20 23:03:34', '1', null, null, null, '15');
-INSERT INTO `orders` VALUES ('15', '83', '2019-03-20 23:06:36', '1', null, '四川省成都市高新区软件园', '18081011501', '15');
-INSERT INTO `orders` VALUES ('16', '657', '2019-03-20 23:08:32', '1', null, '四川省成都市高新区软件园', '18081011501', '15');
-INSERT INTO `orders` VALUES ('17', '799', '2019-03-20 23:31:14', '1', null, '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('1', '441', '2019-03-11 23:27:18', '1', 'ben1', null, null, '14');
+INSERT INTO `orders` VALUES ('2', '382', '2019-03-13 22:18:01', '1', 'ben2', null, null, '14');
+INSERT INTO `orders` VALUES ('3', '471', '2019-03-14 23:37:16', '1', 'ben3', null, null, '14');
+INSERT INTO `orders` VALUES ('4', '372', '2019-03-14 23:37:44', '1', 'ben4', null, null, '14');
+INSERT INTO `orders` VALUES ('5', '83', '2019-03-14 23:37:54', '1', 'ben5', '5', null, '14');
+INSERT INTO `orders` VALUES ('6', '299', '2019-03-14 23:38:15', '1', 'ben6', null, null, '14');
+INSERT INTO `orders` VALUES ('7', '198', '2019-03-14 23:38:27', '1', 'ben7', null, null, '14');
+INSERT INTO `orders` VALUES ('8', '35800', '2019-03-14 23:46:57', '2', 'ben8', null, null, '14');
+INSERT INTO `orders` VALUES ('9', '716', '2019-03-20 21:49:28', '3', 'ben9', null, null, '14');
+INSERT INTO `orders` VALUES ('10', '716', '2019-03-20 21:49:38', '3', 'ben10', null, null, '14');
+INSERT INTO `orders` VALUES ('11', '477', '2019-03-20 21:55:34', '3', 'ben', null, null, '15');
+INSERT INTO `orders` VALUES ('12', '1162', '2019-03-20 21:55:59', '2', 'ben', null, null, '15');
+INSERT INTO `orders` VALUES ('13', '299', '2019-03-20 23:01:36', '3', 'ben', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('14', '0', '2019-03-20 23:03:34', '3', 'ben', null, null, '15');
+INSERT INTO `orders` VALUES ('15', '83', '2019-03-20 23:06:36', '4', 'ben', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('16', '657', '2019-03-20 23:08:32', '3', 'ben', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('17', '799', '2019-03-20 23:31:14', '3', 'ben', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('18', '292', '2019-04-17 22:54:35', '1', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('19', '202', '2019-04-17 22:55:01', '1', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('20', '0', '2019-04-17 23:02:03', '1', 'Benjamin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('21', '1636', '2019-04-17 23:02:24', '4', 'Benjamin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('22', '913', '2019-04-17 23:13:01', '1', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('23', '694', '2019-04-17 23:14:11', '1', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('24', '198', '2019-04-17 23:15:15', '3', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('25', '299', '2019-04-17 23:16:12', '3', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('26', '358', '2019-04-17 23:16:43', '3', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
+INSERT INTO `orders` VALUES ('27', '299', '2019-04-17 23:18:04', '3', 'admin', '四川省成都市高新区软件园', '18081011501', '15');
 
 -- ----------------------------
 -- Table structure for product
@@ -214,7 +240,7 @@ CREATE TABLE `product` (
   PRIMARY KEY (`pid`),
   KEY `FKED8DCCEFB9B74E02` (`csid`),
   CONSTRAINT `FKED8DCCEFB9B74E02` FOREIGN KEY (`csid`) REFERENCES `categorysecond` (`csid`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of product

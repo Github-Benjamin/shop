@@ -62,6 +62,12 @@
     </bean>
 
 
+    <!-- Spring 中注册拦截器-->
+    <bean id="privilegeInterceptor" class="cn.benjamin.shop.interceptor.PrivilegeInterceptor" scope="prototype">
+    </bean>
+
+
+
     <!-- 事务管理: -->
     <!-- 事务管理器 -->
     <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">

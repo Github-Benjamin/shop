@@ -20,7 +20,9 @@ public class PrivilegeInterceptor extends MethodFilterInterceptor {
            // 没有登录进行访问
            ActionSupport actionSupport =(ActionSupport) actionInvocation.getAction();
            actionSupport.addActionError("亲！您还没有登录！没有权限访问！");
-           return ActionSupport.LOGIN;
+           return "loginFail";
+           // 跳转到login action
+           // return ActionSupport.LOGIN;
 
        } else {
            // 已登录过

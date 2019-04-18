@@ -12,13 +12,14 @@
 
         <!--配置拦截器-->
         <interceptors>
-            <interceptor name="privilegeInterceptor" class="cn.benjamin.shop.interceptor.PrivilegeInterceptor"/>
+            <interceptor name="privilegeInterceptor" class="privilegeInterceptor"/>
         </interceptors>
 
         <!--配置全局访问-->
         <global-results>
             <result name="msg">/WEB-INF/jsp/msg.jsp</result>
             <result name="login">/WEB-INF/jsp/login.jsp</result>
+            <result name="loginFail">/admin/index.jsp</result>
         </global-results>
 
         <!-- 配置首页访问的Action -->
@@ -83,8 +84,8 @@
             <result name="editSuccess">/admin/category/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminCategory_findAll.action</result>
             <!--一应用拦截器-->
-            <interceptor-ref name="privilegeInterceptor"/>
-            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
         <!--配置后台二级分类管理的Action-->
@@ -96,8 +97,8 @@
             <result name="editSuccess">/admin/categorysecond/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminCategorySecond_findAll.action?page=1</result>
             <!--一应用拦截器-->
-            <interceptor-ref name="privilegeInterceptor"/>
-            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
         <!--配置商品管理的Action-->
@@ -109,8 +110,8 @@
             <result name="editSuccess">/admin/product/edit.jsp</result>
             <result name="updateSuccess" type="redirectAction">adminProduct_findAll.action?page=1</result>
             <!--一应用拦截器-->
-            <interceptor-ref name="privilegeInterceptor"/>
-            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
         <!--配置订单管理的Action-->
@@ -120,12 +121,11 @@
             <result name="findByStateSuccess">/admin/order/list.jsp</result>
             <result name="findOrderItem">/admin/order/orderItem.jsp</result>
             <!--一应用拦截器-->
-            <interceptor-ref name="privilegeInterceptor"/>
-            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
     </package>
-    <!---->
 
 </struts>
 
