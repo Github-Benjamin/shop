@@ -30,7 +30,7 @@ public class UserService {
 
     // 业务层完成用户注册代码:
     public void save(User user) {
-        user.setState("0"); // 设置激活状态
+        user.setState(0); // 设置激活状态
         String code = UUIDUtils.getUUID() + UUIDUtils.getUUID();
         user.setCode( code ); // 设置激活码
         userDao.save(user);

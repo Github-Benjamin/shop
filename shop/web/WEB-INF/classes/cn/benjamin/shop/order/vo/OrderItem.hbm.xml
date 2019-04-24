@@ -11,13 +11,13 @@
         </id>
         <property name="count"/>
         <property name="subtotal"/>
+        <property name="uid"/>
+
+        <!--关联关系：与商品的关系-->
+        <many-to-one name="product"  lazy="false"  class="cn.benjamin.shop.product.vo.Product" column="pid"></many-to-one>
 
         <!--关联关系：与订单的关系-->
         <many-to-one name="order" class="cn.benjamin.shop.order.vo.Order" column="oid"/>
-
-        <!--关联关系：与商品的关系-->
-        <many-to-one name="product"  lazy="false"  class="cn.benjamin.shop.product.vo.Product" column="pid"/>
-
 
     </class>
 </hibernate-mapping>

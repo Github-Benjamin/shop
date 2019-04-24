@@ -73,24 +73,34 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
             return "msg";
         }
         order.setTotal(cart.getTotal());
+
+
+
+        // 设置订单所属用户
+        User existUser = (User)ServletActionContext.getRequest().getSession().getAttribute("existUser");
+
+        if( existUser == null ){
+            this.addActionError("亲！您还没有登陆！请先去登陆！");
+            return "login";
+        }
+        order.setUser(existUser);
+
+
         // 设置订单中的订单项
         for (CartItem cartItem:cart.getCartItems()){
             OrderItem orderItem = new OrderItem();
             orderItem.setCount(cartItem.getCount());
             orderItem.setSubtotal(cartItem.getSubtotal());
             orderItem.setProduct(cartItem.getProduct());
+            orderItem.setUid(existUser.getUid() );
             orderItem.setOrder(order);
-
             order.getOrderItems().add(orderItem);
         }
 
-        // 设置订单所属用户
-        User existUser = (User)ServletActionContext.getRequest().getSession().getAttribute("existUser");
-        if( existUser == null ){
-            this.addActionError("亲！您还没有登陆！请先去登陆！");
-            return "login";
-        }
-        order.setUser(existUser);
+        System.out.println(existUser.getUsername());
+        System.out.println(existUser.getAddr());
+        System.out.println(existUser.getPhone());
+
         orderService.save(order);
 
         // 2. 将订单对象显示到页面上
@@ -143,7 +153,8 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         // 为订单付款
         String p0_Cmd = "Buy"; // 业务类型
         String p1_MerId = "10001126856";// 商户id编号
-        String p2_Order = order.getOid().toString();// 订单编号
+//        String p2_Order = order.getOid().toString();// 订单编号
+        String p2_Order = "453330012";
         String p3_Amt = "0.01";// 支付金额
         String p4_Cur = "CNY"; // 交易币种
         String p5_Pid = ""; // 商品名称
@@ -153,7 +164,7 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         String p8_Url = "http://localhost:8080/order_callBack.action";
         String p9_SAF = ""; // 送货地址
         String pa_MP = ""; // 扩展信息
-        String pd_Frpid = this.pd_FrpId; // 支付通道编码
+        String pd_FrpId = this.pd_FrpId; // 支付通道编码
         String pr_NeedResponse = "1"; // 应答机制
         String keyValue = "69cl522AV6q613Ii4W6u8K6XuW8vM1N6bFgyv769220IuYe9u37N4y7rI4Pl";
         String hmac = PaymentUtil.buildHmac(p0_Cmd, p1_MerId, p2_Order, p3_Amt, p4_Cur, p5_Pid, p6_Pcat, p7_Pdesc,
@@ -171,7 +182,8 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         stringBuffer.append("p7_Pdesc=").append(p7_Pdesc).append("&");
         stringBuffer.append("p8_Url=").append(p8_Url).append("&");
         stringBuffer.append("p9_SAF=").append(p9_SAF).append("&");
-        stringBuffer.append("pd_Frpid=").append(pd_Frpid).append("&");
+        stringBuffer.append("pa_MP=").append(pa_MP).append("&");
+        stringBuffer.append("pd_FrpId=").append(pd_FrpId).append("&");
         stringBuffer.append("pr_NeedResponse=").append(pr_NeedResponse).append("&");
         stringBuffer.append("hmac=").append(hmac);
 

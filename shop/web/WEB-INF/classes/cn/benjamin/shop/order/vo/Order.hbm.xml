@@ -5,7 +5,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="cn.benjamin.shop.order.vo.Order" table="Orders">
+    <class name="cn.benjamin.shop.order.vo.Order" table="orders">
         <id name="oid">
             <generator class="native"/>
         </id>
@@ -13,17 +13,17 @@
         <property name="ordertime"/>
         <property name="state"/>
         <property name="name"/>
-        <property name="addr"/>
         <property name="phone"/>
+        <property name="addr"/>
+
 
         <!--关联关系：与用户的关系-->
-        <many-to-one name="user" lazy="false" class="cn.benjamin.shop.user.vo.User" column="uid"></many-to-one>
+        <many-to-one name="user" lazy="false" class="cn.benjamin.shop.user.vo.User" column="uid"/>
 
         <!--关联关系：与订单项的关系-->
         <set name="orderItems" lazy="false" cascade="save-update">
-            <key column="uid"/>
+            <key column="oid"/>
             <one-to-many class="cn.benjamin.shop.order.vo.OrderItem"/>
-
         </set>
 
     </class>

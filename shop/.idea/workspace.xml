@@ -20,56 +20,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <file leaf-file-name="Order.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="254">
+              <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderItem.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="e#1059#1075#0" expanded="true" />
-                <element signature="e#1117#1130#0" expanded="true" />
-                <element signature="e#1169#1183#0" expanded="true" />
-                <element signature="e#1226#1244#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/struts.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderAction.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/action/OrderAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="92" column="31" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="31" />
+            <state relative-caret-position="342">
+              <caret line="93" column="32" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
                 <element signature="e#1547#1548#0" expanded="true" />
                 <element signature="e#1595#1596#0" expanded="true" />
               </folding>
@@ -77,54 +68,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/action/UserAction.java">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="35" />
               <folding>
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#510#521#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
+      <file leaf-file-name="order.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="-750">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrivilegeInterceptor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/interceptor/PrivilegeInterceptor.java">
+      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/service/OrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="160">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/vo/AdminUser.java">
+      <file leaf-file-name="OrderDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/dao/OrderDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" selection-start-line="8" selection-end-line="35" />
+            <state relative-caret-position="143">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/category/vo/Category.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -144,36 +139,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Category</find>
-      <find>findAllByPage</find>
-      <find>添加</find>
-      <find>时间</find>
-      <find>csid</find>
-      <find>删除</find>
-      <find>select</find>
-      <find>updateSuccess</find>
-      <find>selected</find>
-      <find>upload</find>
-      <find>delete</find>
       <find>发货</find>
       <find>where</find>
-      <find />
+      <find>new PageHibernateCallback</find>
       <find>state</find>
-      <find />
+      <find>new PageHibernateCallback&lt;Order&gt;</find>
       <find>createXmlHttp</find>
       <find>username</find>
-      <find>save</find>
       <find>orderitem</find>
       <find>传智播客</find>
       <find>确认收货</find>
       <find>count</find>
-      <find>uid</find>
-      <find>existUser</find>
       <find>existAdminUser</find>
       <find>defaultStack</find>
       <find>LOGIN</find>
       <find>login</find>
       <find>privilegeInterceptor</find>
+      <find>hmac</find>
+      <find>69cl522AV6q613Ii4W6u8K6XuW8vM1N6bFgyv769220IuYe9u37N4y7rI4Pl</find>
+      <find>order_save</find>
+      <find>submit</find>
+      <find>save</find>
+      <find>.save</find>
+      <find>传智网上商城</find>
+      <find>网上商城</find>
+      <find>orders</find>
+      <find>existUser</find>
+      <find>生成订单成功</find>
+      <find>category</find>
+      <find>uid</find>
+      <find>OrderItem</find>
     </findStrings>
     <replaceStrings>
       <replace>${pageContext.request.contextPath}</replace>
@@ -182,22 +177,14 @@
       <replace>${page}</replace>
       <replace>${pageContext.request.contextPath}/image</replace>
       <replace>${pageContext.request.contextPath}/</replace>
-      <replace />
       <replace>Benjamin</replace>
+      <replace>网上商城Shop</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/vo/AdminUser.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/vo/AdminUser.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/action/AdminUserAction.java" />
-        <option value="$PROJECT_DIR$/web/admin/index.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/top.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/category/list.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/dao/CategotySecond.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/service/CategotySecondService.java" />
@@ -233,13 +220,22 @@
         <option value="$PROJECT_DIR$/web/admin/order/orderItem.jsp" />
         <option value="$PROJECT_DIR$/web/admin/order/list.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/orderList.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/action/OrderAction.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/cart.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/interceptor/PrivilegeInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/vo/User.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/vo/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/order/action/OrderAction.java" />
       </list>
     </option>
   </component>
@@ -271,9 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,25 +290,89 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="categorysecond" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="categorysecond" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -323,24 +380,40 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Benjamin/Desktop/java/shop/src/cn/benjamin/shop/order/vo/Order.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/PanDownload/SSH/代码/shop/WebRoot/WEB-INF/web.xml" />
+    <property name="last_opened_file_path" value="D:/PanDownload/SSH/代码/shop/src/cn/itcast/shop/order/dao/OrderDao.java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="two.files.diff.last.used.file" value="D:/PanDownload/SSH/代码/shop/WebRoot/WEB-INF/web.xml" />
+    <property name="two.files.diff.last.used.file" value="D:/PanDownload/SSH/代码/shop/src/cn/itcast/shop/order/dao/OrderDao.java" />
     <property name="two.files.diff.last.used.folder" value="D:/PanDownload/SSH/代码/shop/src/cn/itcast/shop/category" />
   </component>
   <component name="RecentsManager">
@@ -633,15 +706,16 @@
       <workItem from="1555072618323" duration="8072000" />
       <workItem from="1555337464505" duration="7013000" />
       <workItem from="1555506845499" duration="10142000" />
-      <workItem from="1555600542662" duration="5099000" />
+      <workItem from="1555600542662" duration="5852000" />
+      <workItem from="1556112777044" duration="7007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203432000" />
+    <option name="totallyTimeSpent" value="211192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50268096" side_tool="true" weight="0.3062678" />
@@ -650,67 +724,69 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32897604" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.26353276" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32621083" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.5163399" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32570806" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="6" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49731904" visible="true" weight="0.40849674" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" sideWeight="0.49731904" visible="true" weight="0.3398693" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32763532" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25159913" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.18247126" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.15511727" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Persistence" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info id="Persistence" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32897604" />
     </layout>
     <layout-to-restore>
+      <window_info id="Persistence" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32934132" />
       <window_info id="Designer" order="0" />
       <window_info anchor="right" id="Palette" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" sideWeight="0.49731904" visible="true" weight="0.48910674" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49731904" visible="true" weight="0.251634" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32763532" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50268096" side_tool="true" weight="0.3062678" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32621083" />
-      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32570806" />
+      <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.15511727" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14179105" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.18247126" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.26353276" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.5163399" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,59 +797,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/index/action/IndexAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ognl-3.0.6.jar!/ognl/ASTChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/shop_war_exploded/admin/category/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/category/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/category/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/category/vo/Category.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/cart/action/CartAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -813,13 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -919,15 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/left.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -977,24 +981,6 @@
             <element signature="e#1212#1213#0" expanded="true" />
             <element signature="e#1597#1598#0" expanded="true" />
             <element signature="e#1663#1664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/dao/OrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
-          <folding>
-            <element signature="e#3481#3482#0" expanded="true" />
-            <element signature="e#3531#3532#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1030,57 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/orderList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="68" column="93" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/action/OrderAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="92" column="31" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding>
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1091,9 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1103,38 +1039,190 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
+        <state relative-caret-position="357">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="e#1059#1075#0" expanded="true" />
-            <element signature="e#1117#1130#0" expanded="true" />
-            <element signature="e#1169#1183#0" expanded="true" />
-            <element signature="e#1226#1244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/interceptor/PrivilegeInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="51">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/utils/PaymentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/vo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="103" column="39" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding>
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work_path/java/src.zip!/java/net/DualStackPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/vo/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/cart/vo/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/category/vo/Category.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#510#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/vo/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/action/OrderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="93" column="32" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,7 +1233,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited />
+          <last-edited>shop:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

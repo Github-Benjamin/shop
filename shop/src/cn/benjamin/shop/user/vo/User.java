@@ -15,7 +15,7 @@ public class User {
     private String email;
     private String phone;
     private String addr;
-    private String state;
+    private Integer state;
     private String code;
 
     public Integer getUid() {
@@ -74,11 +74,11 @@ public class User {
         this.addr = addr;
     }
 
-    public String getState() {
+    public Integer getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(Integer state) {
         this.state = state;
     }
 
@@ -89,9 +89,5 @@ public class User {
     public void setCode(String code) {
         this.code = code;
     }
-
-
-
-
 
 }

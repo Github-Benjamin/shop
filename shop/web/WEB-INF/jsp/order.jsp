@@ -80,7 +80,7 @@
                             <a target="_blank"><s:property value="#orderItem.product.pname"/></a>
                         </td>
                         <td>
-                            <s:property value="#orderItem.product,shop_price"/>
+                            <s:property value="#orderItem.product.shop_price"/>
                         </td>
                         <td class="quantity" width="60">
                             <s:property value="#orderItem.count"/>

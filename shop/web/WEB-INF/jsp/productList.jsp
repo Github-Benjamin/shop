@@ -13,7 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>传智网上商城</title>
+    <title>网上商城Shop</title>
     <link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css"/>
     <link href="${pageContext.request.contextPath}/css/product.css" rel="stylesheet" type="text/css"/>
 

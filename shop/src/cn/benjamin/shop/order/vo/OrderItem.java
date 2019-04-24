@@ -13,6 +13,15 @@ public class OrderItem {
     private Double subtotal;
     private Product product;
     private Order order;
+    private Integer uid;
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
 
     public Integer getItemid() {
         return itemid;
@@ -53,4 +62,6 @@ public class OrderItem {
     public void setOrder(Order order) {
         this.order = order;
     }
+
+
 }

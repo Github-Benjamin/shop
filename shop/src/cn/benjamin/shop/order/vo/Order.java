@@ -21,7 +21,7 @@ public class Order {
     private String phone;
 
     // 订单所属的用户
-    private User user;
+    private User user = new User();
 
     // 订单
     private Set<OrderItem> orderItems = new HashSet<OrderItem>();
