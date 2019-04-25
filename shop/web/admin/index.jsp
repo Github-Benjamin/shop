@@ -22,7 +22,7 @@ body {
 <form method="post" action="${pageContext.request.contextPath }/adminUser_login.action" target="_parent" name='theForm' onsubmit="return validate()">
   <table cellspacing="0" cellpadding="0" style="margin-top: 100px" align="center">
   <tr>
-    <td><img src="images/login.png" width="178" height="256" border="0" alt="SHOP" /></td>
+    <td><img src="${pageContext.request.contextPath}/images/login.png" width="178" height="110" border="0" alt="SHOP" /></td>
     <td style="padding-left: 50px">
       <table>
       <tr>

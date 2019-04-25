@@ -15,8 +15,6 @@
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 
-
-
     <!-- 配置连接池 -->
     <!-- 引入外部属性文件 -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -61,12 +59,9 @@
 
     </bean>
 
-
     <!-- Spring 中注册拦截器-->
     <bean id="privilegeInterceptor" class="cn.benjamin.shop.interceptor.PrivilegeInterceptor" scope="prototype">
     </bean>
-
-
 
     <!-- 事务管理: -->
     <!-- 事务管理器 -->
@@ -139,6 +134,10 @@
         <property name="orderService" ref="orderService"/>
     </bean>
 
+    <!--后台对前台用户管理的Action-->
+    <bean id="adminBeforeUserAction" class="cn.benjamin.shop.user.adminaction.AdminBeforeUserAction" scope="prototype">
+        <property name="userService" ref="userService"/>
+    </bean>
 
 
     <!-- Service的配置  ===========================-->

@@ -1,6 +1,7 @@
 package cn.benjamin.shop.user.dao;
 
 import cn.benjamin.shop.user.vo.User;
+import cn.benjamin.shop.utils.PageHibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class UserDao extends HibernateDaoSupport {
 
-    // 按名称查询是否有该用户
+    // DAO层按名称查询是否有该用户
     public User findByUsername(String username) {
         String hql = "from User where username = ?";
         List<User> list = this.getHibernateTemplate().find(hql, username);
@@ -22,7 +23,7 @@ public class UserDao extends HibernateDaoSupport {
         return null;
     }
 
-    // 注册用户存入数据库代码实现
+    // DAO层注册用户存入数据库代码实现
     public void save(User user) {
         this.getHibernateTemplate().save(user);
     }
@@ -37,7 +38,7 @@ public class UserDao extends HibernateDaoSupport {
         return null;
     }
 
-    // 用户激活修改用户状态
+    // DAO层用户激活修改用户状态
     public void updata(User existUser) {
         this.getHibernateTemplate().update(existUser);
     }
@@ -50,5 +51,30 @@ public class UserDao extends HibernateDaoSupport {
             return list.get(0);
         }
         return null;
+    }
+
+    // DAO层统计所有用户个数的方法
+    public int findCount() {
+        String hql = "select count(*) from User";
+        List<Long> list= this.getHibernateTemplate().find(hql);
+        if(list != null && list.size() > 0){
+            return list.get(0).intValue();
+        }
+        return 0;
+    }
+
+    // DAO层分页查询所有用户的方法
+    public List<User> findByPage(int begin, int limit) {
+        String hql = "from User order by uid desc";
+        List<User> list = this.getHibernateTemplate().execute(new PageHibernateCallback<User>(hql,null,begin,limit));
+        if(list != null && list.size() > 0){
+            return list;
+        }
+        return null;
+    }
+
+    // DAO层删除用户的方法
+    public void delete(User user) {
+        this.getHibernateTemplate().delete(user);
     }
 }

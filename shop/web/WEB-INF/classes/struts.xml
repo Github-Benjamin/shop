@@ -125,6 +125,19 @@
             <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
+        <!--配置前台用户管理的Action-->
+        <action name="adminBeforeUser_*" class="adminBeforeUserAction" method="{1}">
+            <result name="findAll">/admin/user/before/list.jsp</result>
+            <result name="deleteSuccess" type="redirectAction">adminBeforeUser_findAll.action?page=1</result>
+
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+
+
+
     </package>
 
 </struts>

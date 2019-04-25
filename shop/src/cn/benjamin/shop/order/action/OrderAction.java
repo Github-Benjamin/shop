@@ -74,17 +74,13 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
         }
         order.setTotal(cart.getTotal());
 
-
-
         // 设置订单所属用户
         User existUser = (User)ServletActionContext.getRequest().getSession().getAttribute("existUser");
-
         if( existUser == null ){
             this.addActionError("亲！您还没有登陆！请先去登陆！");
             return "login";
         }
         order.setUser(existUser);
-
 
         // 设置订单中的订单项
         for (CartItem cartItem:cart.getCartItems()){
@@ -96,10 +92,6 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
             orderItem.setOrder(order);
             order.getOrderItems().add(orderItem);
         }
-
-        System.out.println(existUser.getUsername());
-        System.out.println(existUser.getAddr());
-        System.out.println(existUser.getPhone());
 
         orderService.save(order);
 
