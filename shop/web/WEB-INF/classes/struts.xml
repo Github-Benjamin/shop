@@ -135,7 +135,14 @@
             <interceptor-ref name="defaultStack"></interceptor-ref>
         </action>
 
+        <!--配置后台用户管理的Action-->
+        <action name="adminAfterUser_*" class="adminAfterUserAction" method="{1}">
+            <result name="findAll">/admin/user/after/list.jsp</result>
 
+            <!--一应用拦截器-->
+            <interceptor-ref name="privilegeInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
 
 
     </package>

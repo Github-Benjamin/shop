@@ -139,6 +139,11 @@
         <property name="userService" ref="userService"/>
     </bean>
 
+    <!--后台对后台用户管理的Action-->
+    <bean id="adminAfterUserAction" class="cn.benjamin.shop.user.adminaction.AdminAfterAction" scope="prototype">
+        <property name="adminUserService" ref="adminUserService"/>
+    </bean>
+
 
     <!-- Service的配置  ===========================-->
     <bean id="userService" class="cn.benjamin.shop.user.service.UserService">
@@ -194,6 +199,7 @@
     <bean id="categorySecondDao" class="cn.benjamin.shop.categorysecond.dao.CategorySecondDao">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+
 
 
 </beans>
