@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <HTML>
 	<HEAD>
 		<meta http-equiv="Content-Language" content="zh-cn">
@@ -7,7 +8,8 @@
 	</HEAD>
 	
 	<body>
-		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/adminBeforeUser_save.action" method="post" enctype="multipart/form-data">
+		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/adminBeforeUser_update.action" method="post">
+			<input type="hidden" name="uid" value="<s:property value="user.uid"/>" />
 			&nbsp;
 			<table cellSpacing="1" cellPadding="5" width="100%" align="center" bgColor="#eeeeee" style="border: 1px solid #8ba7e3" border="0">
 				<tr>
@@ -18,13 +20,12 @@
 					</td>
 				</tr>
 
-
 				<tr>
 					<td width="18%" align="center" bgColor="#f5fafe" class="ta_01">
 						用户名：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
-						<input type="text" name="username" value="" class="bg"/>
+						<input type="text" name="username" value="<s:property value="user.username"/>" class="bg"/>
 					</td>
 				</tr>
 
@@ -33,7 +34,16 @@
 						昵称：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
-						<input type="text" name="name" value="" class="bg"/>
+						<input type="text" name="name" value="<s:property value="user.name"/>" class="bg"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td width="18%" align="center" bgColor="#f5fafe" class="ta_01">
+						密码：
+					</td>
+					<td class="ta_01" bgColor="#ffffff" >
+						<input type="text" name="password" value="<s:property value="user.password"/>" class="bg"/>
 					</td>
 				</tr>
 
@@ -42,7 +52,7 @@
 						邮箱：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
-						<input type="text" name="email" value="" class="bg"/>
+						<input type="text" name="email" value="<s:property value="user.email"/>" class="bg"/>
 					</td>
 				</tr>
 
@@ -51,7 +61,7 @@
 						手机号：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
-						<input type="text" name="phone" value="" class="bg"/>
+						<input type="text" name="phone" value="<s:property value="user.username"/>" class="bg"/>
 					</td>
 				</tr>
 
@@ -60,7 +70,7 @@
 						地址：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
-						<input type="text" name="addr" value="" class="bg"/>
+						<input type="text" name="addr" value="<s:property value="user.addr"/>" class="bg"/>
 					</td>
 				</tr>
 
@@ -70,8 +80,8 @@
 					</td>
 					<td class="ta_01" bgColor="#ffffff" >
 						<select name="state">
-							<option value="1">激活</option>
-							<option value="0">未激活</option>
+							<option value="1"  <s:if test="user.state == 1">selected</s:if> >激活</option>
+							<option value="0" <s:if test="user.state == 0">selected</s:if> >未激活</option>
 						</select>
 					</td>
 				</tr>

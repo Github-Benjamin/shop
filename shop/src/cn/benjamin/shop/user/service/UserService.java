@@ -87,4 +87,23 @@ public class UserService {
     public void delete(User user) {
         userDao.delete(user);
     }
+
+    // 业务层完成后台手动添加用户注册代码:
+    public void adminBeforeSave(User user) {
+        userDao.save(user);
+        if(user.getState() == 0){
+            MailUitls.sendMail(user.getEmail(), user.getCode());// 发送激活邮件;
+        }
+
+    }
+
+    // 业务层根据用户id查询用户信息
+    public User findByUid(Integer uid) {
+        return userDao.findByUid(uid);
+    }
+
+    // 业务层修改用户信息
+    public void update(User user) {
+        userDao.update(user);
+    }
 }

@@ -129,6 +129,10 @@
         <action name="adminBeforeUser_*" class="adminBeforeUserAction" method="{1}">
             <result name="findAll">/admin/user/before/list.jsp</result>
             <result name="deleteSuccess" type="redirectAction">adminBeforeUser_findAll.action?page=1</result>
+            <result name="addPageSuccess">/admin/user/before/add.jsp</result>
+            <result name="saveSuccess" type="redirectAction">adminBeforeUser_findAll.action?page=1</result>
+            <result name="editSuccess">/admin/user/before/edit.jsp</result>
+            <result name="updateSuccess" type="redirectAction">adminBeforeUser_findAll.action?page=1</result>
 
             <!--一应用拦截器-->
             <interceptor-ref name="privilegeInterceptor"></interceptor-ref>

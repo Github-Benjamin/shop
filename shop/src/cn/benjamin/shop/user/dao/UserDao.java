@@ -77,4 +77,15 @@ public class UserDao extends HibernateDaoSupport {
     public void delete(User user) {
         this.getHibernateTemplate().delete(user);
     }
+
+    // DAO层查询用户的方法
+    public User findByUid(Integer uid) {
+        return this.getHibernateTemplate().get(User.class,uid);
+    }
+
+    // DAO层修改用户的方法
+    public void update(User user) {
+        this.getHibernateTemplate().update(user);
+    }
+
 }
