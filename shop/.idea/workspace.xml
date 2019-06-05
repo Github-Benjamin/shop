@@ -22,137 +22,147 @@
     <favorites_list name="shop" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6098972">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="AdminBeforeUserAction.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminBeforeUserAction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="503">
-                  <caret line="73" column="23" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#1237#1238#0" expanded="true" />
-                    <element signature="e#1276#1277#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#2473#2474#0" expanded="true" />
-                    <element signature="e#2518#2519#0" expanded="true" />
-                    <element signature="e#2572#2573#0" expanded="true" />
-                    <element signature="e#2608#2609#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#710#711#0" expanded="true" />
-                    <element signature="e#764#765#0" expanded="true" />
-                    <element signature="e#2363#2364#0" expanded="true" />
-                    <element signature="e#2390#2391#0" expanded="true" />
-                    <element signature="e#2489#2490#0" expanded="true" />
-                    <element signature="e#2531#2532#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/admin/user/before/edit.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="97">
-                  <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/struts.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
-                </state>
-              </provider>
-              <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-            </entry>
-          </file>
-          <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/admin/categorysecond/edit.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="33" selection-start-line="33" selection-end-line="37" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/admin/product/edit.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="78" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/service/ProductService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="152" column="22" lean-forward="true" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#786#787#0" expanded="true" />
-                    <element signature="e#834#835#0" expanded="true" />
-                    <element signature="e#3958#3959#0" expanded="true" />
-                    <element signature="e#4000#4001#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ProductDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/dao/ProductDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#1335#1336#0" expanded="true" />
-                    <element signature="e#1408#1409#0" expanded="true" />
-                    <element signature="e#4207#4208#0" expanded="true" />
-                    <element signature="e#4266#4267#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AdminProductAction.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/adminaction/AdminProductAction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="347">
-                  <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminBeforeUserAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminBeforeUserAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="41" selection-start-line="41" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-109">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="19" />
+              <folding>
+                <element signature="e#2146#2147#0" expanded="true" />
+                <element signature="e#2182#2183#0" expanded="true" />
+                <element signature="e#2473#2474#0" expanded="true" />
+                <element signature="e#2518#2519#0" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
+                <element signature="e#2608#2609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="18" />
+              <folding>
+                <element signature="e#710#711#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+                <element signature="e#2302#2303#0" expanded="true" />
+                <element signature="e#2363#2364#0" expanded="true" />
+                <element signature="e#2433#2434#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
+                <element signature="e#2545#2546#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminAfterAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminAfterAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminUserService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+              <folding>
+                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminUserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1589#1590#0" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
+                <element signature="e#1656#1657#0" expanded="true" />
+                <element signature="e#1708#1709#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1854#1855#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/user/after/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/user/after/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="88" column="68" lean-forward="true" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="149" selection-start-line="149" selection-end-line="149" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+        </entry>
+      </file>
+      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/user/after/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -167,7 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LOGIN</find>
       <find>login</find>
       <find>privilegeInterceptor</find>
       <find>hmac</find>
@@ -197,6 +206,7 @@
       <find>csList</find>
       <find>model</find>
       <find>save</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace>${pageContext.request.contextPath}</replace>
@@ -213,8 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/vo/CategorySecond.java" />
         <option value="$PROJECT_DIR$/web/admin/categorysecond/edit.jsp" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/service/CategorySecondService.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/categorysecond/dao/CategorySecondDao.java" />
@@ -253,17 +261,19 @@
         <option value="$PROJECT_DIR$/web/admin/user/before/list.jsp" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/AdminUserDao.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/service/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminAfterAction.java" />
         <option value="$PROJECT_DIR$/src/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java" />
-        <option value="$PROJECT_DIR$/web/admin/user/after/list.jsp" />
         <option value="$PROJECT_DIR$/web/admin/user/before/add.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminBeforeUserAction.java" />
         <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java" />
         <option value="$PROJECT_DIR$/web/admin/user/before/edit.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/user/after/add.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/web/admin/user/after/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminAfterAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java" />
+        <option value="$PROJECT_DIR$/web/admin/user/after/list.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java" />
       </list>
     </option>
   </component>
@@ -295,7 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,14 +328,14 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="adminuser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="adminuser" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,23 +343,7 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -366,15 +359,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -386,20 +371,6 @@
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="categorysecond" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -407,6 +378,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="after" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -422,6 +401,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,18 +419,18 @@
     <property name="two.files.diff.last.used.folder" value="D:/PanDownload/SSH/代码/shop/src/cn/itcast/shop/category" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\admin\user\before" />
-      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\admin\user\after" />
-      <recent name="C:\Users\Benjamin\Desktop\java\shop\src\cn\benjamin\shop\user\vo" />
-      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\images" />
-      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\WEB-INF\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Benjamin\Desktop\java\shop\web\WEB-INF\lib" />
       <recent name="C:\Users\Benjamin\Desktop\java\shop\web\WEB-INF" />
       <recent name="C:\Users\Benjamin\Desktop\java\shop\web" />
       <recent name="C:\Users\Benjamin\Desktop\java\shop" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\admin\user\after" />
+      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\admin\user\before" />
+      <recent name="C:\Users\Benjamin\Desktop\java\shop\src\cn\benjamin\shop\user\vo" />
+      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\images" />
+      <recent name="C:\Users\Benjamin\Desktop\java\shop\web\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -581,7 +561,7 @@
     </configuration>
     <configuration name="shop" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.92" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.action" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="shop:war exploded">
           <settings>
@@ -738,17 +718,19 @@
       <workItem from="1558445719081" duration="1232000" />
       <workItem from="1558448708425" duration="547000" />
       <workItem from="1558449351241" duration="4662000" />
+      <workItem from="1559569321838" duration="599000" />
+      <workItem from="1559742870625" duration="3287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228825000" />
+    <option name="totallyTimeSpent" value="232711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50268096" side_tool="true" weight="0.3062678" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50319827" side_tool="true" weight="0.22440088" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32934132" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
@@ -766,17 +748,17 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49731904" weight="0.6328976" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.4968017" weight="0.34204793" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32763532" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4992126" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4992126" visible="true" weight="0.17377399" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="3" sideWeight="0.5007874" side_tool="true" weight="0.1705757" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info id="Persistence" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
@@ -787,10 +769,9 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32934132" />
       <window_info id="Designer" order="0" />
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49731904" visible="true" weight="0.32461873" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49731904" visible="true" weight="0.32461873" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -799,23 +780,24 @@
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32897604" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50268096" side_tool="true" weight="0.3062678" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32570806" />
       <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1705757" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1705757" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.18247126" />
       <window_info anchor="bottom" id="Debug" order="13" weight="0.5163399" />
     </layout-to-restore>
   </component>
@@ -831,20 +813,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/order/adminaction/AdminOrderAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="67" column="29" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/orderList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="68" column="93" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/vo/AdminUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1024,38 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminAfterAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/vo/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/user/after/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="108" column="87" selection-start-line="108" selection-start-column="87" selection-end-line="108" selection-end-column="87" />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/categorysecond/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="561">
           <caret line="33" selection-start-line="33" selection-end-line="37" selection-end-column="25" />
         </state>
       </provider>
@@ -1094,14 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/user/before/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -1109,40 +1041,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminBeforeUserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="26" />
-          <folding>
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/adminaction/AdminProductAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="2499">
           <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="152" column="22" lean-forward="true" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
-          <folding>
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#4000#4001#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="1836">
           <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
           <folding>
             <element signature="e#1335#1336#0" expanded="true" />
@@ -1153,11 +1061,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/product/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/product/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="152" column="22" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#3958#3959#0" expanded="true" />
+            <element signature="e#4000#4001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/user/before/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/user/after/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminBeforeUserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="41" selection-start-line="41" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+        <state relative-caret-position="-109">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="19" />
           <folding>
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
             <element signature="e#2473#2474#0" expanded="true" />
             <element signature="e#2518#2519#0" expanded="true" />
             <element signature="e#2572#2573#0" expanded="true" />
@@ -1168,30 +1126,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="499">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="18" />
           <folding>
             <element signature="e#710#711#0" expanded="true" />
             <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2302#2303#0" expanded="true" />
             <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2390#2391#0" expanded="true" />
+            <element signature="e#2433#2434#0" expanded="true" />
             <element signature="e#2489#2490#0" expanded="true" />
-            <element signature="e#2531#2532#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/product/edit.jsp">
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/dao/AdminUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="78" />
+        <state relative-caret-position="783">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/user/before/edit.jsp">
+    <entry file="file://$PROJECT_DIR$/web/admin/user/after/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="204">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#HTML#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/user/after/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="88" column="68" lean-forward="true" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/user/adminaction/AdminAfterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/benjamin/shop/adminuser/service/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -43,5 +43,24 @@ public class AdminUserDao extends HibernateDaoSupport {
         return null;
     }
 
+    // DAO层查询用户的方法
+    public AdminUser findByUid(Integer uid) {
+        return this.getHibernateTemplate().get(AdminUser.class,uid);
+    }
+
+    // DAO层保存用户的方法
+    public void save(AdminUser adminUser) {
+        this.getHibernateTemplate().save(adminUser);
+    }
+
+    // DAO层修改用户的方法
+    public void update(AdminUser adminUser) {
+        this.getHibernateTemplate().update(adminUser);
+    }
+
+    // DAO层删除用户的方法
+    public void delete(AdminUser adminUser) {
+        this.getHibernateTemplate().delete(adminUser);
+    }
 
 }

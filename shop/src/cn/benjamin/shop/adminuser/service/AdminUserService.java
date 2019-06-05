@@ -52,4 +52,36 @@ public class AdminUserService {
         return pageBean;
     }
 
+    // 业务层根据用户id查询用户信息
+    public AdminUser findByUid(Integer uid) {
+        return adminUserDao.findByUid(uid);
+    }
+
+    // 业务层添加后台用户的方法
+    public void adminAfterSave(AdminUser adminUser) {
+        if(adminUser.getUsername().equals("admin")){
+            return;
+        }else{
+            adminUserDao.save(adminUser);
+        }
+
+    }
+
+    // 业务层修改后台用户的方法
+    public void update(AdminUser adminUser) {
+        if(adminUser.getUsername().equals("admin") || adminUser.getUid().equals(1)){
+            return;
+        }else {
+            adminUserDao.update(adminUser);
+        }
+    }
+
+    // 业务层删除局后台用户的方法
+    public void delete(AdminUser adminUser) {
+        if(adminUser.getUid().equals(1)){
+            return;
+        }else {
+            adminUserDao.delete(adminUser);
+        }
+    }
 }

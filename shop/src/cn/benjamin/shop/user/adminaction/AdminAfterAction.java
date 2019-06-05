@@ -38,5 +38,36 @@ public class AdminAfterAction extends ActionSupport implements ModelDriven<Admin
         return "findAll";
     }
 
+    // 添加后台用户的方法
+    public String addPage(){
+        return "addPageSuccess";
+    }
+
+    // 存储用户的方法
+    public String save(){
+        adminUserService.adminAfterSave(adminUser);
+        return "saveSuccess";
+    }
+
+    // 编辑前台用户的方法
+    public String edit(){
+        // 根据用户id查询用户信息
+        adminUser = adminUserService.findByUid(adminUser.getUid());
+        // 通过值栈进行保存数据
+        ActionContext.getContext(). getValueStack().set("adminUser",adminUser);
+        return "editSuccess";
+    }
+
+    // 修改后台用户方法
+    public String update(){
+        adminUserService.update(adminUser);
+        return "updateSuccess";
+    }
+
+    // 删除用户的方法
+    public String delete(){
+        adminUserService.delete(adminUser);
+        return "deleteSuccess";
+    }
 
 }

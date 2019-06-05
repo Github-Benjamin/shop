@@ -142,6 +142,11 @@
         <!--配置后台用户管理的Action-->
         <action name="adminAfterUser_*" class="adminAfterUserAction" method="{1}">
             <result name="findAll">/admin/user/after/list.jsp</result>
+            <result name="deleteSuccess" type="redirectAction">adminAfterUser_findAll.action?page=1</result>
+            <result name="addPageSuccess">/admin/user/after/add.jsp</result>
+            <result name="saveSuccess" type="redirectAction">adminAfterUser_findAll.action?page=1</result>
+            <result name="editSuccess">/admin/user/after/edit.jsp</result>
+            <result name="updateSuccess" type="redirectAction">adminAfterUser_findAll.action?page=1</result>
 
             <!--一应用拦截器-->
             <interceptor-ref name="privilegeInterceptor"></interceptor-ref>

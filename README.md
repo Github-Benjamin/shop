@@ -11,6 +11,7 @@ Java SSH 网上商城，只顾传授使用方法，不管解决bug的教学方�
 
 ## 四层功能：
 
+
 ### Action:
 
 Action类是用户请求和业务逻辑之间的桥梁，每个Action充当客户的一项业务代理；
@@ -23,6 +24,7 @@ ModelDriven接口要重写getModel()方法例如:
 ### Service:
 
 能够更加清晰的定义应用程序的边界，需要操作数据的时候，通过service层访问DAO层来实现。
+
 
 ### Dao:
 
